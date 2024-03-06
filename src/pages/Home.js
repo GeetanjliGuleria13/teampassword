@@ -8,10 +8,34 @@ import Card from '../Components/Card';
 import easeimg from '../assets/images/g2badges.webp' ;
 import ditchimg from '../assets/images/teampassword-dashboard.webp';
 import teampasswordimg from '../assets/images/teampassword-screenshot.webp';
+import homebannerimgleft from '../assets/images/homepage-hero1.webp';
+import homebannerimgright from '../assets/images/homepage-hero2.webp';
 
 export default function Home() {
   return (
     <>
+        <div className='home-banner darkblue-backround'>
+            <div className='container'>
+                <div className='row align-items-center'>
+                    <div className='col-md-6 text-white'>
+                        <Common 
+                            title="The Password Manager for Teams"
+                            desc="TeamPassword is the fastest, easiest and most secure way to store and share team logins and passwords"
+                            visit="/signup"
+                            btnName="Get Started!"
+                        />
+                    </div>
+                    <div className='col-md-6'>
+                        <div className='home-banner-img home-banner-imgleft'>
+                            <img src={homebannerimgleft} alt="banner" />
+                        </div>
+                        <div className='home-banner-img home-banner-imgright'>
+                            <img src={homebannerimgright} alt="banner" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div className='ease-sec'>
             <div className='container'>
                 <Commontwosection 
@@ -68,7 +92,7 @@ export default function Home() {
                 </div>
             </div>
         </div>
-        <div className='blue-background ease-sec'>
+        <div className='blue-background ease-sec pwd-mgmt'>
             <div className='container'>
                 <Commontwosection 
                 imgsrc={teampasswordimg}
