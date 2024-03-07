@@ -49,7 +49,7 @@ export default function PlansPricing() {
                     <span>5 licenses included</span>
                   </div>
                   <div className='price-trial common-btn'>
-                    <NavLink to="/shop">Start Free Trial</NavLink>
+                    <NavLink to="/signup">Start Free Trial</NavLink>
                   </div>
                   <p className='actual-price'>${checked ? "6.34" : "7.60" }</p>
                   <div className='compare-price-sec d-flex'>
@@ -74,7 +74,7 @@ export default function PlansPricing() {
                     <span>15 licenses included</span>
                   </div>
                   <div className='price-trial common-btn'>
-                    <NavLink to="/shop">Start Free Trial</NavLink>
+                    <NavLink to="/signup">Start Free Trial</NavLink>
                   </div>
                   <p className='actual-price'>${checked ? "4.16" : "5.00" }</p>
                   <div className='compare-price-sec d-flex'>
@@ -96,7 +96,7 @@ export default function PlansPricing() {
                     <span>30+ licenses included</span>
                   </div>
                   <div className='price-trial common-btn'>
-                    <NavLink to="/shop">Start Free Trial</NavLink>
+                    <NavLink to="/signup">Start Free Trial</NavLink>
                   </div>
                   <p className='actual-price'>${checked ? "4.16" : "5.00" }</p>
                   <div className='compare-price-sec d-flex'>
