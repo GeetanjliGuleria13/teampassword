@@ -86,10 +86,10 @@ export default function Footernavbar() {
         <div className="footer">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-3">
+                    <div className="col-md-3 mb-4 mb-md-0">
                         <NavLink to="/"><img src={ footerlogo } alt="logo" /></NavLink>
                     </div>
-                    <div className="col-lg-9 d-flex justify-content-around">
+                    <div className="col-md-9 d-flex justify-content-around flex-column flex-sm-row px-4 px-sm-0">
                         <div className="footer-menu">
                             <h6>Product</h6>
                             <ul>

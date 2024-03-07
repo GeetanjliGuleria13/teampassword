@@ -21,10 +21,10 @@ export default function Producttour() {
             <img src={producttourlogo} alt="logo" />
           </figure>
           <h1 className='text-white h2'>Team Password <br/>Product Tour</h1>
-          <p className='h6 text-lightblue mx-5 px-5 pt-3 pb-5 mb-4'>TeamPassword is the simple, secure team password manager designed from the ground up with ease-of-use and collaboration in mind.</p>
+          <p className='h6 text-lightblue mx-sm-5 px-md-5 pt-3 pb-5 mb-4'>TeamPassword is the simple, secure team password manager designed from the ground up with ease-of-use and collaboration in mind.</p>
           <div className='tour-banner-logo-sec'>
             <h6 className='text-lightblue pb-3 pt-4'>TRUSTED BY</h6>
-            <div className='tour-banner-logo-sec-inner d-flex justify-content-around align-items-center'>
+            <div className='tour-banner-logo-sec-inner d-flex justify-content-around align-items-center flex-wrap'>
               {
                 Commontourlogodata.map((val, index)=>{
                   return <Commonlogo

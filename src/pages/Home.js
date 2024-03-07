@@ -17,7 +17,7 @@ export default function Home() {
         <div className='home-banner darkblue-backround'>
             <div className='container'>
                 <div className='row align-items-center'>
-                    <div className='col-md-6 text-white'>
+                    <div className='col-lg-6 text-white'>
                         <Common 
                             title="The Password Manager for Teams"
                             desc="TeamPassword is the fastest, easiest and most secure way to store and share team logins and passwords"
@@ -25,7 +25,7 @@ export default function Home() {
                             btnName="Get Started!"
                         />
                     </div>
-                    <div className='col-md-6'>
+                    <div className='col-lg-6'>
                         <div className='home-banner-img home-banner-imgleft'>
                             <img src={homebannerimgleft} alt="banner" />
                         </div>
@@ -103,7 +103,7 @@ export default function Home() {
         </div>
         <div className='home-logo-botm'>
             <div className='container'>
-                <div className='logo-sec d-flex justify-content-around align-items-center'>
+                <div className='logo-sec d-flex justify-content-around align-items-center pt-5'>
                     {
                         Commonlogodata.map((val, index)=>{
                             return <Commonlogo 
@@ -116,12 +116,14 @@ export default function Home() {
             </div>
         </div>
         <div className='home-get-started  text-center'>
-            <Common 
-            title="The Password Manager for Teams"
-            desc="TeamPassword is the fastest, easiest and most secure way to store and share team logins and passwords"
-            visit="/signup"
-            btnName="Get Started!"
-            />
+            <div className='container'>
+                <Common 
+                title="The Password Manager for Teams"
+                desc="TeamPassword is the fastest, easiest and most secure way to store and share team logins and passwords"
+                visit="/signup"
+                btnName="Get Started!"
+                />
+            </div>
         </div>
       
     </>

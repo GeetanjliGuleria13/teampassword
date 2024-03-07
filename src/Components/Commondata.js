@@ -106,3 +106,33 @@ const Encryptlogo = [
 
 ];
 export {Encryptlogo};
+
+const Pricecarddata = [
+    {
+        title: "Starter",
+        desc: "The easy to use password sharing platform",
+        licencedesc: "5 licenses included",
+        pricevisit: "/shop",
+        pricevisitname: "Start Free Trial",
+        yearactualprice: "$6.34",
+        monthactualprice: "$6.34",
+    },
+    {
+        title: "Starter",
+        desc: "The easy to use password sharing platform",
+        licencedesc: "5 licenses included",
+        pricevisit: "/shop",
+        pricevisitname: "Start Free Trial",
+        actualprice: "$6.34",
+    },
+    {
+        title: "Starter",
+        desc: "The easy to use password sharing platform",
+        licencedesc: "5 licenses included",
+        pricevisit: "/shop",
+        pricevisitname: "Start Free Trial",
+        actualprice: "$6.34",
+    },
+
+];
+export {Pricecarddata};

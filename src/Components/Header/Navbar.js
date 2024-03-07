@@ -50,20 +50,25 @@ const Navbar = () => {
       <div className="header">
         <div className="container">
           <div className="header-main row">
-            <NavLink to="/" className="header-logo col-md-2"> <img src={logourl} alt="header-logo" /> </NavLink>
-            <div className="header-navbar col-md-10">
-              <ul>
-                  {
-                  MenuData.map((val, index) => {
-                    return <Menu 
-                    key={index}
-                    title={val.title}
-                    link={val.link}  
-                    />
-                  })
-                  }
-              </ul>
-            </div>
+            <nav className="navbar navbar-expand-lg ">
+              <NavLink to="/" className="header-logo col-md-2"> <img src={logourl} alt="header-logo" /> </NavLink>
+              <button className="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+              </button>
+              <div className="header-navbar col-md-10 collapse navbar-collapse" id="navbarSupportedContent">
+                <ul>
+                    {
+                    MenuData.map((val, index) => {
+                      return <Menu 
+                      key={index}
+                      title={val.title}
+                      link={val.link}  
+                      />
+                    })
+                    }
+                </ul>
+              </div>
+            </nav>
           </div>
         </div>
       </div>
