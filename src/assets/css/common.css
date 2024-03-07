@@ -318,6 +318,9 @@ img{max-width: 100%;}
 }
 .price-sec .card {
     border: 0;
+    @media (max-width:767px){
+        margin: 0 0 30px;
+    }
 }
 .price-sec .card-body {
     position: relative;
