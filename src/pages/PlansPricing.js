@@ -5,6 +5,10 @@ import priceimg from "../assets/images/discount-badge-red.c803690d.svg"
 // import { Pricecarddata } from '../Components/Commondata';
 import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
 import { NavLink } from 'react-router-dom';
+import Commonlogo from '../Components/Commonlogo';
+import { Commontourlogodata, Pricecarddata } from '../Components/Commondata';
+import Common from '../Components/Common';
+import { Cardprice } from '../Components/Card';
 
 
 
@@ -79,7 +83,7 @@ export default function PlansPricing() {
                   <p className='actual-price'>${checked ? "4.16" : "5.00" }</p>
                   <div className='compare-price-sec d-flex'>
                     <span className='coin-icon'>$</span>
-                    <span className="compare-price">{checked ? "0.83" : "35.00" }</span>
+                    <span className="compare-price">{checked ? "0.83" : "3.00" }</span>
                   </div>
                   <p className='price-desc'>PER USER PER MONTH</p>
                   <span className='monthdesc'>*For the first 6 months</span>
@@ -108,6 +112,41 @@ export default function PlansPricing() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className='tour-banner-logo-sec mt-5'>
+            <h6 className='text-lightblue pb-3 pt-4 text-center'>TRUSTED BY</h6>
+            <div className='tour-banner-logo-sec-inner d-flex justify-content-around align-items-center flex-wrap'>
+              {
+                Commontourlogodata.map((val, index)=>{
+                  return <Commonlogo
+                  key={index}
+                  imgsrc={val.imgsrc}
+                  />
+                })
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='ease-sec price-manager-sec'>
+        <div className='container'>
+          <Common
+          title= "TeamPassword Manager Product Tour"
+          desc="TeamPassword is the simple, secure team password manager designed from the ground up with ease-of-use and collaboration in mind."
+          />
+          <div className='row price-security'>
+            {
+              Pricecarddata.map((val,index)=>{
+                return <Cardprice 
+                  key={index}
+                  imgsrc={val.imgsrc}
+                  title={val.title}
+                  desc={val.desc}
+                  cardlink={val.cardlink}
+                  cardlinkdata={val.cardlinkdata}
+                />
+              })
+            }
           </div>
         </div>
       </div>

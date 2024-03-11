@@ -316,42 +316,44 @@ img{max-width: 100%;}
         }
     }
 }
-.price-sec .card {
-    border: 0;
-    @media (max-width:767px){
-        margin: 0 0 30px;
+.price-sec {
+    & .card {
+        border: 0;
+        @media (max-width:767px){
+            margin: 0 0 30px;
+        }
+        & .card-body {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            width: unset;
+            height: 450px;
+            border-radius: 2px;
+            text-align: center;
+            background-color: rgb(23, 64, 85);
+            color: #fff;
+            padding: 0 60px;
+            & h6 {
+                margin: 0px;
+                font-family: MuliBold, sans-serif;
+                font-size: 32px;
+                line-height: 1.6;
+            }
+            & p {
+                margin: 0px;
+                font-family: Muli, sans-serif;
+                font-weight: 400;
+                line-height: 1.43;
+                font-size: 16px;
+                padding: 0px 10px;
+                white-space: pre-line;
+            }
+        }
     }
-}
-.price-sec .card-body {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    width: unset;
-    height: 450px;
-    border-radius: 2px;
-    text-align: center;
-    background-color: rgb(23, 64, 85);
-    color: #fff;
-    padding: 0 60px;
-}
-.price-sec .card-body h6 {
-    margin: 0px;
-    font-family: MuliBold, sans-serif;
-    font-size: 32px;
-    line-height: 1.6;
-}
-.price-sec .card-body p {
-    margin: 0px;
-    font-family: Muli, sans-serif;
-    font-weight: 400;
-    line-height: 1.43;
-    font-size: 16px;
-    padding: 0px 10px;
-    white-space: pre-line;
 }
 .price-licence {
     background-color: rgb(17, 49, 62);
@@ -359,27 +361,18 @@ img{max-width: 100%;}
     padding: 4px 25px;
     margin: 20px 0px;
     gap: 8px;
-}
-.price-licence span {
-    font-size: 14px;
-}
-.price-trial a {
-    padding: 6px 16px;
-    font-size: 16px;
-    font-family: 'Muli';
-    height: auto;
+    & span {
+        font-size: 14px;
+    }
 }
 .price-trial {
     width: 100%;
-}
-.price-trial a {
-    padding: 6px 16px;
-    font-size: 16px;
-    font-family: 'Muli';
-    height: auto;
-}
-.price-trial {
-    width: 100%;
+    & a {
+        padding: 6px 16px;
+        font-size: 16px;
+        font-family: 'Muli';
+        height: auto;
+    }
 }
 .price-sec .card-body p.actual-price {
     margin: 16px 0px -14px;
@@ -435,13 +428,13 @@ img{max-width: 100%;}
     left: 0px;
     margin-left: auto;
     margin-right: auto;
-}
-.popular-card span {
-    margin: 0px;
-    font-family: MuliBold, sans-serif;
-    line-height: 2.66;
-    text-transform: uppercase;
-    font-size: 11px;
+    & span {
+        margin: 0px;
+        font-family: MuliBold, sans-serif;
+        line-height: 2.66;
+        text-transform: uppercase;
+        font-size: 11px;
+    }
 }
 .price-sec .col-md-4:nth-child(2) .card-body {
     height: 475px;
@@ -456,6 +449,48 @@ img{max-width: 100%;}
     margin-block: 40px;
     font-family: 'MuliBold';
 }
+.price-manager-sec {
+    & .common-inner-sec {
+        text-align: center;
+        & h3 {
+            color: #204C6A;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 2.2767857142857144rem;
+            font-family: MuliBold, sans-serif;
+        }
+        & p {
+            max-width: 800px;
+            margin: 0 auto;
+            padding-block: 40px !important;
+            padding-inline: 10px;
+        }
+    }
+}
+
+.price-security {
+    & img {
+        max-width: 30px;
+        height: 60px;
+        padding: 0;
+    }
+    & h6 {
+        margin: 0;
+        font-size: 1.6071428571428572rem;
+        line-height: 1.334;
+        margin-bottom: 0.35em;
+        color: #10313e;
+        padding-top: 10px;
+    }
+    & p {
+        margin: 0;
+        font-weight: 400;
+        font-size: 0.9375rem;
+        line-height: 1.43;
+        color: #10313e;
+    }
+}
+
 
 
 @media (max-width:991px){
