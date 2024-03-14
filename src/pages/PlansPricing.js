@@ -6,8 +6,8 @@ import priceimg from "../assets/images/discount-badge-red.c803690d.svg"
 import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
 import { NavLink } from 'react-router-dom';
 import Commonlogo from '../Components/Commonlogo';
-import { Commontourlogodata, Pricecarddata } from '../Components/Commondata';
-import Common from '../Components/Common';
+import { Commontourlogodata, Pricecarddata, FaqQuestions } from '../Components/Commondata';
+import Common, { FaqAccordian } from '../Components/Common';
 import { Cardprice } from '../Components/Card';
 
 
@@ -19,6 +19,7 @@ export default function PlansPricing() {
   const handleChange = (nextChecked) => {
     setChecked(nextChecked);
   };
+  const [data, setData] = useState(FaqQuestions);
   return (
     <>
       <div className='pricing-banner'>
@@ -34,7 +35,7 @@ export default function PlansPricing() {
             </div>
           </div>
           <label className='switch-sec'>
-          <span>Bill monthly</span>
+            <span>Bill monthly</span>
             <ReactSwitch
               onChange={handleChange}
               checked={checked}
@@ -146,6 +147,22 @@ export default function PlansPricing() {
                   cardlinkdata={val.cardlinkdata}
                 />
               })
+            }
+          </div>
+        </div>
+      </div>
+      <div className='faq-sec ease-sec blue-background'>
+        <div className='container'>
+          <h4>Frequently Asked Questions</h4>
+          <div className="faq-main mt-4 pt-2">
+            {
+              data.map((curElem)=>{
+                const {id} = curElem;
+                return <FaqAccordian 
+                  key={id} {...curElem}
+                />
+              })
+
             }
           </div>
         </div>

@@ -165,9 +165,54 @@ export {Pricecarddata};
 const FaqQuestions = [
     {
         id: 1,
-        question: 'What is the virtual DOM?',
-        answer: 'DOM stands for Document Object Model. The DOM represents an HTML document with a logical tree structure.',
-
+        question: 'How do I sign up for a subscription?',
+        answer: 'Owners and Admins can sign up for a subscription by clicking on their avatar in the top right corner to bring up their Settings menu and select the team name.',
+        answer1: 'Owners and Admins can sign up for a subscription by clicking on their avatar in the top right corner to bring up their Settings menu and select the team name.',
+    },
+    {
+        id: 2,
+        question: 'How do I update my billing information?',
+        answer: 'Owners and Admins can update billing information by clicking on their avatar in the top right corner to bring up their Settings menu and select the team name.',
+    },
+    {
+        id: 3,
+        question: 'What if I need a plan for more than 30 users?',
+        answer: 'TeamPassword offers plans of many sizes. Need more than 30 seats? Let us know by contacting support. And don’t forget to ask about our volume discounts!',
+    },
+    {
+        id: 4,
+        question: 'What is the master password and what if I forget it?',
+        answer: 'Don’t forget it.',
+    },
+    {
+        id: 5,
+        question: 'Do I have to import logins manually?',
+        answer: 'No! TeamPassword has an import tool that makes importing logins from CSV a breeze.',
+    },
+    {
+        id: 6,
+        question: 'Does TeamPassword have two-factor authentication?',
+        answer: 'Yes! Two-factor authentication (2FA) provides an extra layer of security for your account, and is recommended for all users.',
+    },
+    {
+        id: 7,
+        question: 'Want to require 2FA for your entire organization as an extra security measure?',
+        answer: 'TeamPassword can do that!',
+    },
+    {
+        id: 8,
+        question: 'Does TeamPassword have Single Sign-On?',
+        answer: 'Yes! TeamPassword has Google Single Sign-On (SSO).',
+    },
+    {
+        id: 9,
+        question: 'Is TeamPassword secure?',
+        answer: 'Yes! TeamPassword uses AES 256-bit encryption. Data is hashed, salted, and encrypted locally on your computer before being transmitted to the server via an encrypted connection. And our hosting providers are accredited with the industries best standards.',
+    },
+    {
+        id: 10,
+        question: 'How can I access TeamPassword on all of my devices?',
+        answer: 'TeamPassword has apps available for iOS and Android. Our mobile apps enable users to login and access their records using their username and master password or Google Single Sign-On.',
     },
 ];
 export {FaqQuestions};
